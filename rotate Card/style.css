@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: azure;
+  display: flex;
+}
+.container {
+  width: 300px;
+  height: 450px;
+  display: 0 auto;
+  border-radius: 2rem;
+  margin: auto;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front {
+  /* position: relative; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profile {
+  height: 40%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wallpaper {
+  height: 50%;
+  width: 100%;
+  background: url("/pexels-taylen-lundequam-15053929.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.avtar {
+  position: relative;
+  top: -25%;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  background: url("/5C0A8066.JPEG");
+  background-size: cover;
+  border: 3px solid white;
+}
+.body {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.discp {
+  padding: 20px 10px 10px 10px;
+  font-weight: 500;
+  text-align: center;
+  font-size: small;
+}
+
+.bottom {
+  display: inline;
+  margin: auto;
+  border-top: 2px solid gray;
+  height: 10%;
+  width: 70%;
+  /* width: 100%; */
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.bottom p {
+  padding: 5px;
+  font-size: 15px;
+  color: gray;
+  font-weight: 100;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.backtop {
+  height: 25%;
+  width: 100%;
+  background-color: white;
+  /* border-bottom: 2px solid gray; */
+}
+.line1 {
+  font-weight: 100;
+  height: 2px;
+  width: 80%;
+  background-color: gray;
+  margin: auto;
+}
+.backtoptext {
+  font-weight: 500;
+  text-align: center;
+  font-size: small;
+  padding: 20px;
+}
+
+.backbody {
+  /* display: flex; */
+  background-color: white;
+  height: 65%;
+  width: 100%;
+}
+.backtitleheading {
+  text-align: center;
+  padding-bottom: 10px;
+  color: gray;
+  font-weight: 300;
+}
+
+.backtitledescp {
+  text-align: center;
+  color: gray;
+  font-weight: 300;
+  padding: 0px 10px 0px 10px;
+  font-size: small;
+}
+
+.backcount {
+  text-align: center;
+  padding: 30px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.countiteam1,
+.countiteam2,
+.countiteam3 {
+  align-content: center;
+  /* padding-top: 30px; */
+  text-align: center;
+}
+.counttext {
+  text-align: center;
+  padding: 5px;
+  font-size: smaller;
+}
+.countiteam2 {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+.backbottom {
+  height: 10%;
+  width: 100%;
+  border-top: 1px solid gray;
+  font-weight: lighter;
+}
