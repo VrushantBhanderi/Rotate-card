@@ -54,7 +54,7 @@ body {
 .wallpaper {
   height: 50%;
   width: 100%;
-  background: url("/pexels-taylen-lundequam-15053929.jpg");
+  background: url("../pexels-taylen-lundequam-15053929.jpg");
   background-size: cover;
   position: relative;
 }
@@ -66,7 +66,7 @@ body {
   border-radius: 50%;
   height: 90px;
   width: 90px;
-  background: url("/5C0A8066.JPEG");
+  background: url("../5C0A8066.JPEG");
   background-size: cover;
   border: 3px solid white;
 }
